@@ -2,6 +2,7 @@ package edu.kirkwood.view;
 
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.Michael.PolyDifferentialCalculator;
+import edu.kirkwood.controller.oleksiy.QuadraticEquationCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
 import static edu.kirkwood.view.UserInput.getInt;
@@ -14,6 +15,7 @@ public class MainMenu {
         String[] menuItems = {
                 "Marc's Fraction Calculator",
                 "Michael's Polynomial Differentiation Calculator",
+                "OFed's Quadratic Equation Calculator",
                 "Quit"
         };
         while(true) {
@@ -25,6 +27,9 @@ public class MainMenu {
                     break;
                 case 2:
 
+                    break;
+                case 3:
+                    QuadraticEquationCalculator.start();
                     break;
                 default:
                     return;
