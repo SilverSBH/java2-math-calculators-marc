@@ -46,18 +46,4 @@ public class Messages {
         displayMessage("Thank you for using Michael's Polynomial Differentiation Calculator.\n"
                 + "We hope it was useful!");
     }
-
-    public static void halfLifeHello() {
-        System.out.println();
-        displayMessage("Welcome to Xavian's Half-Life Calculator!");
-        System.out.println("Select an option below to start:");
-    }
-
-    /**
-     * Displays the half life calculator's farewell message.
-     */
-    public static void halfLifeGoodbye() {
-        System.out.println();
-        displayMessage("Thank you for using Xavian's Half-Life Calculator.");
-    }
 }

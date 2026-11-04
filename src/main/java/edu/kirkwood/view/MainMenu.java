@@ -2,7 +2,6 @@ package edu.kirkwood.view;
 
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.Michael.PolyDifferentialCalculator;
-import edu.kirkwood.controller.xavian.HalfLifeCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
 import static edu.kirkwood.view.UserInput.getInt;
@@ -15,7 +14,6 @@ public class MainMenu {
         String[] menuItems = {
                 "Marc's Fraction Calculator",
                 "Michael's Polynomial Differentiation Calculator",
-                "Xavian's Half Life Calculator",
                 "Quit"
         };
         while(true) {
@@ -26,10 +24,8 @@ public class MainMenu {
                     FractionCalculator.start();
                     break;
                 case 2:
-                    PolyDifferentialCalculator.start();
+
                     break;
-                case 3:
-                    HalfLifeCalculator.start();
                 default:
                     return;
             }
