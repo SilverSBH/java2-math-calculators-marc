@@ -83,4 +83,21 @@ public class Messages {
     public static void quadraticEquationGoodbye(){
         displayMessage("Thank you for trying out OFed's Quadratic Equation formatter");
     }
+
+    /**
+     * Displays the booster pack calculator's welcome message and instructions.
+     */
+    public static void packGreet() {
+        displayMessage("Welcome to Zach's Booster Pack Calculator");
+        System.out.println("Please select a booster pack to open.");
+        System.out.println("Enter your chase Pokemon and the number of packs you want to open.");
+        System.out.println("The calculator will return the cumulative mathematical odds of pulling your chase Pokemon from the packs you opened.\n");
+    }
+
+    /**
+     * Displays the booster pack calculator's farewell message.
+     */
+    public static void packGoodbye() {
+        displayMessage("Thank you for using Zach's Booster Pack Calculator");
+    }
 }
