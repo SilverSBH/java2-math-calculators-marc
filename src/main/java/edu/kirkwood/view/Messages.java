@@ -1,6 +1,7 @@
 package edu.kirkwood.view;
 
 import static edu.kirkwood.view.UIUtility.displayMessage;
+import static edu.kirkwood.view.UIUtility.printLine;
 
 public class Messages {
 
@@ -63,5 +64,23 @@ public class Messages {
      */
     public static void triangleGoodbye(){
         displayMessage("Thank you for using Colby's Triangle Calculator");
+    }
+  
+    /**
+     * Displays initial instructions for using the Quadratic Equation calculator.
+     */
+    public static void quadraticEquationsGreet(){
+        displayMessage("Welcome to 0Fed's Quadratic Equation Calculator");
+        System.out.println("Please input your quadratic equation in standard form, starting with section a.");
+        System.out.println("eg. The part within brackets -> [a]x^2+bx+c");
+        System.out.println("Press q at anytime to quit.");
+        printLine();
+    }
+
+    /**
+     * Displays the Quadratic Equation calculator's farewell message.
+     */
+    public static void quadraticEquationGoodbye(){
+        displayMessage("Thank you for trying out OFed's Quadratic Equation formatter");
     }
 }
