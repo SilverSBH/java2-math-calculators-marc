@@ -1,10 +1,9 @@
 package edu.kirkwood.model.zach;
 
-import edu.kirkwood.model.Card;
+import edu.kirkwood.model.zach.Card;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit tests for the Card class.
