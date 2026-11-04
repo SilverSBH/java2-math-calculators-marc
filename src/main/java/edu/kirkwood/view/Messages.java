@@ -46,4 +46,22 @@ public class Messages {
         displayMessage("Thank you for using Michael's Polynomial Differentiation Calculator.\n"
                 + "We hope it was useful!");
     }
+    /**
+     * Displays instructions for using the triangle calculator.
+     */
+    public static void triangleGreet(){
+        displayMessage("Welcome to Colby's Triangle Calculator");
+        System.out.println("Please enter the known values of the sides and/or angles of your triangle.");
+        System.out.println("Press [Enter] to skip any unknown value.");
+        System.out.println("Requirements:");
+        System.out.println(" - Exactly 3 values must be provided.");
+        System.out.println(" - At least 1 value must be a side length.");
+    }
+
+    /**
+     * Displays the triangle calculator's farewell message.
+     */
+    public static void triangleGoodbye(){
+        displayMessage("Thank you for using Colby's Triangle Calculator");
+    }
 }
