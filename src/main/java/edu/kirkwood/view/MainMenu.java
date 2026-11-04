@@ -29,6 +29,7 @@ public class MainMenu {
                     PolyDifferentialCalculator.start();
                     break;
                 case 3:
+                    // Xavian's Half Life Calculator
                     HalfLifeCalculator.start();
                 default:
                     return;
