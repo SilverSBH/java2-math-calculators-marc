@@ -180,7 +180,7 @@ public class UserInput {
      * @param min smallest accepted value
      * @return the entered double, or {@code -Double.MAX_VALUE} when optional input is invalid
      */
-    public static double getDouble(String prompt, boolean required, int min) {
+    public static double getDouble(String prompt, boolean required, double min) {
         return getDouble(prompt, required, min, Double.MAX_VALUE);
     }
 
