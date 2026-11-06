@@ -4,6 +4,7 @@ import edu.kirkwood.controller.colby.TriangleCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.Michael.PolyDifferentialCalculator;
 import edu.kirkwood.controller.oleksiy.QuadraticEquationCalculator;
+import edu.kirkwood.controller.Jade.DecayCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
 import static edu.kirkwood.view.UserInput.getInt;
@@ -18,6 +19,7 @@ public class MainMenu {
                 "Michael's Polynomial Differentiation Calculator",
                 "Colby's Triangle Calculator",
                 "OFed's Quadratic Equation Calculator",
+                "Jade's Exponential Decay Calculator",
                 "Quit"
         };
         while(true) {
@@ -35,6 +37,9 @@ public class MainMenu {
                     break;
                 case 4:
                     QuadraticEquationCalculator.start();
+                    break;
+                case 5:
+                    DecayCalculator.start();
                     break;
                 default:
                     return;
