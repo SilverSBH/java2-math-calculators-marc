@@ -50,6 +50,20 @@ public class Messages {
                 + "We hope it was useful!");
     }
 
+    public static void probabilityGreet() {
+        displayMessage("Welcome to Jim's Probability Calculator");
+        System.out.println("This calculator will use one of three methods to show the odds of rolling a particular");
+        System.out.println("value on a number of dice: calculation via a combinatorial formula, evaluation by examining");
+        System.out.println("all possible combinations of the dice, or simulation by rolling the dice a number of times.");
+    }
+
+    /**
+     * Displays the probability calculator's farewell message.
+     */
+    public static void probabilityGoodbye() {
+        displayMessage("Thank you for using Jim's Probability Calculator.");
+    }
+  
     /**
      * Displays instructions for using Bailey's Astrophotography OED calculator.
      */
