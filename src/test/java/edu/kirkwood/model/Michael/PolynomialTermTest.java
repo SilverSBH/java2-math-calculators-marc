@@ -37,7 +37,7 @@ class PolynomialTermTest {
 	}
 
 	@Test
-	@DisplayName("")
+	@DisplayName("Test fetching variable component.")
 	void testGetVar() {
 		String expected = "x";
 		String actual = ptVarXOrder1.getVar();
@@ -45,14 +45,14 @@ class PolynomialTermTest {
 	}
 
 	@Test
-	@DisplayName("")
+	@DisplayName("Test fetching exponent component.")
 	void testGetExp() {
 		int expected = 2;
 		assertEquals(expected, ptVarXOrder2.getExp());
 	}
 
 	@Test
-	@DisplayName("")
+	@DisplayName("Test fetching coefficient component.")
 	void testGetCoeff() {
 		int expected = 5;
 		int actual = ptVarXOrder2.getCoeff();

@@ -34,6 +34,7 @@ public class Messages {
     public static void fractionGoodbye() {
         displayMessage("Thank you for using Marc's Fraction Calculator");
     }
+
     public static void PolyDiffHello()
     {
         displayMessage("Greetings, and welcome to Michael's Polynomial Differentiation Calculator.");
@@ -42,11 +43,78 @@ public class Messages {
                 + "Between each term, place either a \'+\' or \'-\' separated by a space on each side.");
         System.out.println("Example: \'2x^3 + 3x^2 - 5x + 3\'\n");
     }
+
     public static void PolyDiffFarewell()
     {
         displayMessage("Thank you for using Michael's Polynomial Differentiation Calculator.\n"
                 + "We hope it was useful!");
     }
+
+    public static void halfLifeHello() {
+        System.out.println();
+        displayMessage("Welcome to Xavian's Half-Life Calculator!");
+        System.out.println("Select an option below to start:");
+    }
+
+    /**
+     * Displays the half life calculator's farewell message.
+     */
+    public static void halfLifeGoodbye() {
+        System.out.println();
+        displayMessage("Thank you for using Xavian's Half-Life Calculator.");
+    }
+  
+    public static void probabilityGreet() {
+        displayMessage("Welcome to Jim's Probability Calculator");
+        System.out.println("This calculator will use one of three methods to show the odds of rolling a particular");
+        System.out.println("value on a number of dice: calculation via a combinatorial formula, evaluation by examining");
+        System.out.println("all possible combinations of the dice, or simulation by rolling the dice a number of times.");
+    }
+
+    /**
+     * Displays the probability calculator's farewell message.
+     */
+    public static void probabilityGoodbye() {
+        displayMessage("Thank you for using Jim's Probability Calculator.");
+    }
+  
+    /**
+     * Displays instructions for using Bailey's Astrophotography OED calculator.
+     */
+    public static void astroGreet() {
+        displayMessage("Welcome to Bailey's Astrophotography OEV calculator!");
+        System.out.println("Astrophotography is the practice of photographing objects deep in space, such as galaxies, nebulae, and star clusters.\n" +
+                "This calculator accounts for your exposure settings, information about your camera and telescope, and\n" +
+                "local light pollution, to produce an Overall-Exposure-Value.\n" +
+                "'Overall-Exposure-Value' is a general, numeric indicator of how much light entered\n" +
+                "the camera sensor throughout the entire imaging process.\n" +
+                "Generally, a longer exposure time means a less-noisy, and more detailed image.\n" +
+                "It also gives the standard exposure time, and a general 'quality rating' indicating how finished your final image is.\n" +
+                "'Good' is a solid goal for most personal-images, and 'Excellent' is what you should aim for if you plan to print the image or sell it." +
+                "\nWhat do each of these settings mean?\n" +
+                "> Exposure Time: The amount of seconds that your camera shutter was open while taking each image.\n" +
+                "       The final exposure time is calculated by multiplying the single-frame exposure time by the total amount of frames you captured.\n" +
+                "> Light Frames: A light frame is a single image of the sky, usually around 15-60 seconds, or more. after a long night of imaging,\n" +
+                "       hundreds of these are stacked together using special software, to create a final, blended image of extremely faint deep-sky-objects.\n" +
+                "       Stacking the images cancelles out the random 'grain' or 'noise' in the images, but maintains the real pixel-data that's perfectly consistant across each image.\n" +
+                "> F-stop: Also known as 'Aperture' - this is the value given to how wide the aperture is in your lens or telescope.\n" +
+                "       The value is normally written as a fraction (ex: f/5.6), but this calculator just takes the denominator, in decimal form (ex: 5.6).\n" +
+                "> Sensor Size: This is the size of your camera's sensor. A larger sensor has more surface area for light to hit it, and generally produces cleaner images.\n" +
+                "       Options include 'micro' for Micro four-thirds, 'apsc' for APS-C, 'full' for Full-Frame, and 'medium' for Medium Format.\n" +
+                "> Bortle Scale: The bortle scale is a scale that measures local light pollution in the sky. It's a number between 1 and 9, where\n" +
+                "       9 is 'Middle of the city', and 1 is 'middle of the dessert at 2am'."
+        );
+        System.out.println("\nEnter each of the required values in the prompts below, in the specified format.");
+        System.out.println("Enter '-1' at any time to Exit to Main Menu.\n");
+    }
+
+    /**
+     * Displays instructions for using Bailey's Astrophotography OED calculator.
+     */
+    public static void astroGoodbye() {
+        displayMessage("Thanks for using Bailey's Astro-Photo OEV Calculator!");
+    }
+  
     /**
      * Displays instructions for using the triangle calculator.
      */
@@ -136,5 +204,22 @@ public class Messages {
      */
     public static void decayGoodbye() {
         displayMessage("Thank you for using Jade's Exponential Decay Calculator");
+    }
+
+    /**
+     * Displays the booster pack calculator's welcome message and instructions.
+     */
+    public static void packGreet() {
+        displayMessage("Welcome to Zach's Booster Pack Calculator");
+        System.out.println("Please select a booster pack to open.");
+        System.out.println("Enter your chase Pokemon and the number of packs you want to open.");
+        System.out.println("The calculator will return the cumulative mathematical odds of pulling your chase Pokemon from the packs you opened.\n");
+    }
+
+    /**
+     * Displays the booster pack calculator's farewell message.
+     */
+    public static void packGoodbye() {
+        displayMessage("Thank you for using Zach's Booster Pack Calculator");
     }
 }
