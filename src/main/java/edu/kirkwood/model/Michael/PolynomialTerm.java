@@ -189,6 +189,7 @@ public class PolynomialTerm {
 	/**
 	 * A method to copy the current term, passing by value.
 	 */
+	@Override
 	public PolynomialTerm clone()
 	{
 		return new PolynomialTerm(coefficient, variable, exponent);
