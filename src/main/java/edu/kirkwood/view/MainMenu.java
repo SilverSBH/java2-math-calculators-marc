@@ -7,6 +7,7 @@ import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.Michael.PolyDifferentialCalculator;
 import edu.kirkwood.controller.xavian.HalfLifeCalculator;
 import edu.kirkwood.controller.oleksiy.QuadraticEquationCalculator;
+import edu.kirkwood.controller.Jade.DecayCalculator;
 import edu.kirkwood.controller.zach.BoosterPackCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
@@ -25,6 +26,7 @@ public class MainMenu {
                 "Bailey's OED Calculator",
                 "Colby's Triangle Calculator",
                 "OFed's Quadratic Equation Calculator",
+                "Jade's Exponential Decay Calculator",
                 "Zach's Pokemon Booster Pack Calculator",
                 "Quit"
         };
@@ -54,6 +56,9 @@ public class MainMenu {
                     QuadraticEquationCalculator.start();
                     break;
                 case 8:
+                    DecayCalculator.start();
+                    break;
+                case 9:
                     BoosterPackCalculator.start();
                     break;
                 default:
