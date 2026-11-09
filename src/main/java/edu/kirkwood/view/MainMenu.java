@@ -1,8 +1,11 @@
 package edu.kirkwood.view;
 
 import edu.kirkwood.controller.leesonj.ProbabilityCalculator;
+import edu.kirkwood.controller.bailey.AstroOEVCalculator;
+import edu.kirkwood.controller.colby.TriangleCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.Michael.PolyDifferentialCalculator;
+import edu.kirkwood.controller.oleksiy.QuadraticEquationCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
 import static edu.kirkwood.view.UserInput.getInt;
@@ -16,6 +19,9 @@ public class MainMenu {
                 "Marc's Fraction Calculator",
                 "Michael's Polynomial Differentiation Calculator",
                 "Jim's Probability Calculator",
+                "Bailey's OED Calculator",
+                "Colby's Triangle Calculator",
+                "OFed's Quadratic Equation Calculator",
                 "Quit"
         };
         while(true) {
@@ -26,10 +32,19 @@ public class MainMenu {
                     FractionCalculator.start();
                     break;
                 case 2:
-
+                    PolyDifferentialCalculator.start();
                     break;
                 case 3:
                     ProbabilityCalculator.start();
+                    break;
+                case 4:
+                    AstroOEVCalculator.start();
+                    break;
+                case 5:
+                    TriangleCalculator.start();
+                    break;
+                case 6:
+                    QuadraticEquationCalculator.start();
                     break;
                 default:
                     return;
