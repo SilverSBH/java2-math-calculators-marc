@@ -20,6 +20,7 @@ public class MainMenu {
                 "Bailey's OED Calculator",
                 "Colby's Triangle Calculator",
                 "OFed's Quadratic Equation Calculator",
+                "Bailey's OED Calculator",
                 "Quit"
         };
         while(true) {
@@ -40,6 +41,9 @@ public class MainMenu {
                     break;
                 case 5:
                     QuadraticEquationCalculator.start();
+                    break;
+                case 5:
+                    AstroOEVCalculator.start();
                     break;
                 default:
                     return;
