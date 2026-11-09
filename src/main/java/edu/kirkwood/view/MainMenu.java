@@ -5,6 +5,7 @@ import edu.kirkwood.controller.bailey.AstroOEVCalculator;
 import edu.kirkwood.controller.colby.TriangleCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.Michael.PolyDifferentialCalculator;
+import edu.kirkwood.controller.xavian.HalfLifeCalculator;
 import edu.kirkwood.controller.oleksiy.QuadraticEquationCalculator;
 
 import static edu.kirkwood.view.UIUtility.printMenu;
@@ -18,6 +19,7 @@ public class MainMenu {
         String[] menuItems = {
                 "Marc's Fraction Calculator",
                 "Michael's Polynomial Differentiation Calculator",
+                "Xavian's Half Life Calculator",
                 "Jim's Probability Calculator",
                 "Bailey's OED Calculator",
                 "Colby's Triangle Calculator",
@@ -35,15 +37,18 @@ public class MainMenu {
                     PolyDifferentialCalculator.start();
                     break;
                 case 3:
-                    ProbabilityCalculator.start();
+                    HalfLifeCalculator.start();
                     break;
                 case 4:
-                    AstroOEVCalculator.start();
+                    ProbabilityCalculator.start();
                     break;
                 case 5:
-                    TriangleCalculator.start();
+                    AstroOEVCalculator.start();
                     break;
                 case 6:
+                    TriangleCalculator.start();
+                    break;
+                case 7:
                     QuadraticEquationCalculator.start();
                     break;
                 default:
