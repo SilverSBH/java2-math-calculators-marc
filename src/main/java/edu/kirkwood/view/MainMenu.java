@@ -53,7 +53,7 @@ public class MainMenu {
                 case 7:
                     QuadraticEquationCalculator.start();
                     break;
-                case 5:
+                case 8:
                     BoosterPackCalculator.start();
                     break;
                 default:
