@@ -1,5 +1,6 @@
 package edu.kirkwood.view;
 
+import edu.kirkwood.controller.bailey.AstroOEVCalculator;
 import edu.kirkwood.controller.colby.TriangleCalculator;
 import edu.kirkwood.controller.marc.FractionCalculator;
 import edu.kirkwood.controller.Michael.PolyDifferentialCalculator;
@@ -18,6 +19,7 @@ public class MainMenu {
                 "Michael's Polynomial Differentiation Calculator",
                 "Colby's Triangle Calculator",
                 "OFed's Quadratic Equation Calculator",
+                "Bailey's OED Calculator",
                 "Quit"
         };
         while(true) {
@@ -35,6 +37,9 @@ public class MainMenu {
                     break;
                 case 4:
                     QuadraticEquationCalculator.start();
+                    break;
+                case 5:
+                    AstroOEVCalculator.start();
                     break;
                 default:
                     return;
