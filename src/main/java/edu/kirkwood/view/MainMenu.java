@@ -17,6 +17,7 @@ public class MainMenu {
         String[] menuItems = {
                 "Marc's Fraction Calculator",
                 "Michael's Polynomial Differentiation Calculator",
+                "Bailey's OED Calculator",
                 "Colby's Triangle Calculator",
                 "OFed's Quadratic Equation Calculator",
                 "Bailey's OED Calculator",
@@ -33,9 +34,12 @@ public class MainMenu {
                     PolyDifferentialCalculator.start();
                     break;
                 case 3:
-                    TriangleCalculator.start();
+                    AstroOEVCalculator.start();
                     break;
                 case 4:
+                    TriangleCalculator.start();
+                    break;
+                case 5:
                     QuadraticEquationCalculator.start();
                     break;
                 case 5:
